@@ -9,7 +9,7 @@ All current examples are cases of the vector Laplacian on a planar two-dimension
 
 In all cases, the .msh file has the same filename as the script.
 
-**re-entrant_corner_FEEC.py** - Laplacian problem with source on a L-shaped domain containing a 90 degree re-entrant corner.  Theory indicates in the continuous solution a r^{-1/3} singularity at distance r from the corner and the numerical challenge is to resolve this singularity without spurious oscillations.
+**re-entrant_corner.py** - Laplacian problem with source on a L-shaped domain containing a 90 degree re-entrant corner.  Theory indicates in the continuous solution a r^{-1/3} singularity at distance r from the corner and the numerical challenge is to resolve this singularity without spurious oscillations.
 
 **source_problem_on_annulus.py** - Laplacian problem with source on an annular domain.  The numerical challenge is to avoid pollution of the output by the 1-cohomology of the vector Laplacian on the domain (represented by the usual (-y/r^2, -x/r^2) vortex solution).
 
