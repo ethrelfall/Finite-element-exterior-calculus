@@ -13,10 +13,10 @@ mesh=Mesh("eigenvalue_problem_double_vortex.msh")
 
 # there are two "good" choices of vector finite element space:
 
-# 1) Raviart-Thomas edge elements - order should be same as that of space SP1 below
+# 1) Raviart-Thomas edge elements - order should be same as that of space SS below
 SV=FunctionSpace(mesh,"RTE",3)  # note element type N1curl is equivalent to RTE
 
-# 2) Brezzi-Douglas-Marini edge elements - order should be one less than that of space SP1 below
+# 2) Brezzi-Douglas-Marini edge elements - order should be one less than that of space SS below
 #SV=FunctionSpace(mesh, "BDME",2)  # note element type N2curl is equivalent to BDME
 
 SS=FunctionSpace(mesh,"CG",3)  # order should be 1, 2, 3, ...
