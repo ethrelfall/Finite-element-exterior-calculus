@@ -43,4 +43,4 @@ SV=VectorFunctionSpace(mesh, "CG", 2)
 flow = Function(SV)
 flow.interpolate(as_vector([y/(x**2+y**2),-x/(x**2+y**2)])+grad(g))
 
-File("square_vortex_cohomology_alternate.pvd").write(flow)
+File("square_vortex_cohomology_alternate_flow.pvd").write(flow)
