@@ -17,4 +17,8 @@ In all cases, the .msh file has the same filename as the script.
 
 **eigenvalue_problem_double_vortex.py** - slightly more interesting eigenvalue problem to find the 1-cohomology of the vector Laplacian on a square with two holes removed.  The two zero-eigenvalue modes correspond roughly (but not precisely) to the cases of a co-rotating and a counter-rotating vortex pair (the solver does not find the pure co-/counter-rotating modes but rather linear combinations thereof).  Output best viewed as streamline plot.
 
+**eigenvalue_problem_square_vortex.py** - eigenvalue problem, similar to eigenvalue_problem_single_vortex.py but on a square domain with a non-centred square hole.  Has re-entrant corner singularities (r^{-1/3}) and also non-trivial cohomology.  Amplitude plot shows corner singularities; streamline plot shows ... streamlines.
+
+**square_vortex_cohomology_alternate** - solves problem of finding zero-eigenvalue mode of square + square hole as in eigenvalue_problem_square_vortex.py but using an alternate method (no FEEC needed, just conventional FEM).  Treats problem as deformation of a circular vortex by a gradient.
+
 The help of Colin Cotter, Patrick Farrell, and Lawrence Mitchell is acknowledged.  Any mistakes are due to the author (Ed Threlfall). 
