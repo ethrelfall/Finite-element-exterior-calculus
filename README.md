@@ -7,7 +7,7 @@ These are some simple Firedrake examples of the use of finite element exterior c
 
 All current examples (bar k_equals_2_Hodge_Laplacian_square.py) are cases of the vector Laplacian on a planar two-dimensional domain subject to u \cdot n = curl u \times n = 0 on the boundaries.
 
-In all cases, the .msh file has the same filename as the script.
+Unless indicated in the descriptions below, the .msh file has the same filename as the script.
 
 **re-entrant_corner.py** - Laplacian problem with source on a L-shaped domain containing a 90 degree re-entrant corner.  Theory indicates in the continuous solution a r^{-1/3} singularity at distance r from the corner and the numerical challenge is to resolve this singularity without spurious oscillations.
 
