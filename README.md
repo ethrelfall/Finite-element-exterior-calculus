@@ -21,6 +21,6 @@ In all cases, the .msh file has the same filename as the script.
 
 **square_vortex_cohomology_alternate.py** - solves problem of finding zero-eigenvalue mode of square + square hole as in eigenvalue_problem_square_vortex.py but using an alternate method (no FEEC needed, just conventional FEM).  Treats problem as deformation of a circular vortex by a gradient.
 
-**k_equals_2_Hodge_Laplacian_square.py** - solves k=2 Hodge Laplacian on square, demonstrating some function spaces that work and some that don't.  Taken from "Finite Element Exterior Calculus: from Hodge Theory to Numerical Stability" (arXiv:0906.4325v3) by Arnold, Falk, Winther (AFW); S.2.3.1 p.14, where a lucid discussion can be found.  Note this is self-contained example with no attendant .msh file.
+**k_equals_2_Hodge_Laplacian_square.py** - solves k=2 Hodge Laplacian on square, demonstrating some function spaces that work and some that don't.  Taken from "Finite Element Exterior Calculus: from Hodge Theory to Numerical Stability" (arXiv:0906.4325v3) by Arnold, Falk, Winther; S.2.3.1 p.14, where a lucid discussion can be found.  Note this is self-contained example with no attendant .msh file.
 
 The help of Colin Cotter, Patrick Farrell, and Lawrence Mitchell is acknowledged.  Any mistakes are due to the author (Ed Threlfall). 
