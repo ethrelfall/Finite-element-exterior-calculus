@@ -5,7 +5,7 @@ Repository for FEEC material e.g. Firedrake examples.
 
 These are some simple Firedrake examples of the use of finite element exterior calculus as presented in the textbook Finite Element Exterior Calculus by D.N. Arnold.
 
-All current examples are cases of the vector Laplacian on a planar two-dimensional domain subject to u \cdot n = curl u \times n = 0 on the boundaries.
+All current examples (bar k_equals_2_Hodge_Laplacian_square.py) are cases of the vector Laplacian on a planar two-dimensional domain subject to u \cdot n = curl u \times n = 0 on the boundaries.
 
 In all cases, the .msh file has the same filename as the script.
 
