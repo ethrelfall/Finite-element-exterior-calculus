@@ -2,6 +2,7 @@ from firedrake import *
 
 # solves \nabla^2 u = f, where f is (0,x)
 # note this corresponds to the example in Fig.5.2 of the textbook Finite Element Exterior Calculus, D.N. Arnold
+# now includes analytic solution (see EOF)
 
 mesh=Mesh("source_problem_on_annulus.msh")
 
@@ -105,3 +106,24 @@ solve(a == L, g, nullspace=nullspace, solver_parameters=sp_it)
 u, sigma = g.split()
 File("source_problem_on_annulus_u.pvd").write(u)
 #File("source_problem_on_annulus_sigma.pvd").write(sigma)  # if sigma desired as output
+
+# analytic solution for u
+
+# this function is derived by solving the vorticity equation \nabla^2 \omega = 1 assuming no angular dependence, then inverting the curl
+# with e.g. v_x = \int_0^1 dt ( -y t \omega(tx, ty) )
+poincare_integral = Function(SV)
+poincare_integral.interpolate(as_vector([(5/32)*y-(1/16)*y*(x**2+y**2)-(3/(32*ln(2)))*y+(3/(32*ln(2)))*y*ln(x**2+y**2),-(5/32)*x+(1/16)*x*(x**2+y**2)+(3/(32*ln(2)))*x-(3/(32*ln(2)))*x*ln(x**2+y**2)]))
+
+# then evaluate the vector Laplacian of poincare_integral and add a gradient to get (0,x) as the RHS (up to multiples of the harmonic, which seem to be allowed in the solution)
+inhom_potential = Function(SS)
+inhom_potential.interpolate(((1/24)*(x**2+y**2)-(7/40)-(1/30)*(1/(x**2+y**2)**2))*x*y)
+
+analytic_solution = Function(SV)
+analytic_solution.interpolate(poincare_integral+grad(inhom_potential))
+
+# get rid of any harmonic component in the solution
+scalarprod_analytic = assemble(inner(analytic_solution,q)*dx)
+analytic_solution-=q*scalarprod_analytic  # this can be done analytically if one has the patience (do it if using this for error analysis)
+
+File("source_problem_on_annulus_analytic.pvd").write(analytic_solution)
+
