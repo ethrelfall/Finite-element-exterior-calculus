@@ -123,7 +123,7 @@ analytic_solution.interpolate(poincare_integral+grad(inhom_potential))
 
 # get rid of any harmonic component in the solution
 scalarprod_analytic = assemble(inner(analytic_solution,q)*dx)
-analytic_solution-=q*scalarprod_analytic  # this can be done analytically if one has the patience (do it if using this for error analysis)
+analytic_solution-=q*scalarprod_analytic  # this can be done analytically if one has the patience (do it if using this for error analysis, but remember still formally a discrete representation, this isn't Mathematica)
 
 File("source_problem_on_annulus_analytic.pvd").write(analytic_solution)
 
