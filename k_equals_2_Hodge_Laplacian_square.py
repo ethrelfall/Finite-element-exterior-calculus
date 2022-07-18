@@ -41,4 +41,4 @@ g=Function(V)
 solve(a==L, g)
 
 sigma, u = g.split()  # opposite way round to k=1 Hodge Laplace examples
-File("arnold22.pvd").write(u)  # u or sigma
+File("k_equals_2_Hodge_Laplacian_square.pvd").write(u)  # u or sigma
