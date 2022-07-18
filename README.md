@@ -13,6 +13,8 @@ Unless indicated in the descriptions below, the .msh file has the same filename 
 
 **source_problem_on_annulus.py** - Laplacian problem with source on an annular domain.  The numerical challenge is to avoid pollution of the output by the 1-cohomology of the vector Laplacian on the domain (represented by the usual (-y/r^2, -x/r^2) vortex solution).  Includes analytic solution to the problem for comparison with output.
 
+![source_problem_on_annulus_analytic](png/source_problem_on_annulus_analytic.png "Analytic solution to source problem on annulus.")
+
 **eigenvalue_problem_single_vortex.py** - eigenvalue problem to find the 1-cohomology of the vector Laplacian on the annulus (same domain as source_problem_on_annulus.py script and the zero-eigenvalue mode is the vortex described for that example).  Output best viewed as streamline plot.
 
 **eigenvalue_problem_double_vortex.py** - slightly more interesting eigenvalue problem to find the 1-cohomology of the vector Laplacian on a square with two holes removed.  The two zero-eigenvalue modes correspond roughly (but not precisely) to the cases of a co-rotating and a counter-rotating vortex pair (the solver does not find the pure co-/counter-rotating modes but rather linear combinations thereof).  Output best viewed as streamline plot.
@@ -25,6 +27,7 @@ Unless indicated in the descriptions below, the .msh file has the same filename 
 
 **k_equals_2_Hodge_Laplacian_square.py** - solves k=2 Hodge Laplacian on square, demonstrating some function spaces that work and some that don't.  Taken from "Finite Element Exterior Calculus: from Hodge Theory to Numerical Stability" (arXiv:0906.4325v3) by Arnold, Falk, Winther; S.2.3.1 p.14, where a lucid discussion can be found.  Note this is self-contained example with no attendant .msh file.
 
+![k_equals_2_Hodge_Laplacian_square_success](png/k_equals_2_Hodge_Laplacian_square_success.png "Success case of k=2 Hodge Laplacian problem on square.")
 ![k_equals_2_Hodge_Laplacian_square_fail](png/k_equals_2_Hodge_Laplacian_square_fail.png "Failure case of k=2 Hodge Laplacian problem on square.")
 
 The help of Colin Cotter, Patrick Farrell, and Lawrence Mitchell is acknowledged.  Any mistakes are due to the author (Ed Threlfall). 
