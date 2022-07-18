@@ -11,6 +11,8 @@ Unless indicated in the descriptions below, the .msh file has the same filename 
 
 **re-entrant_corner.py** - Laplacian problem with source on a L-shaped domain containing a 90 degree re-entrant corner.  Theory indicates in the continuous solution a r^{-1/3} singularity at distance r from the corner and the numerical challenge is to resolve this singularity without spurious oscillations.
 
+![re_entrant_corner](png/arnold51_CG_ord2.png "Re-entrant corner with CG order 2 vector elements for gradient, showing spurious oscillation; remedy is to switch to e.g. Raviart-Thomas edge elements.")
+
 **source_problem_on_annulus.py** - Laplacian problem with source on an annular domain.  The numerical challenge is to avoid pollution of the output by the 1-cohomology of the vector Laplacian on the domain (represented by the usual (-y/r^2, -x/r^2) vortex solution).  Includes analytic solution to the problem for comparison with output.
 
 ![source_problem_on_annulus_analytic](png/source_problem_on_annulus_analytic.png "Analytic solution to source problem on annulus.")
