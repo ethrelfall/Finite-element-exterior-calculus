@@ -25,8 +25,8 @@ Unless indicated in the descriptions below, the .msh file has the same filename 
 
 **double_vortex_cohomology_alternate.py** - solves problem of finding zero-eigenvalue modes of square + 2 circular holes as in eigenvalue_problem_double_vortex.py (uses same .msh file as that example) but using an alternate method (no FEEC needed, just conventional FEM).  Treats problem as deformation of analytic double vortex solutions by gradients.
 
-![counter_rot_vortices](png/counter_rot_vortices.png "Streamlines for counter-rotating vortex pair, from "alternate" method.")
-![co_rot_vortices](png/co_rot_vortices.png "Streamlines for co-rotating vortex pair, from "alternate" method.")
+![counter_rot_vortices](png/counter_rot_vortices.png "Streamlines for counter-rotating vortex pair, from 'alternate' method.")
+![co_rot_vortices](png/co_rot_vortices.png "Streamlines for co-rotating vortex pair, from 'alternate' method.")
 
 **k_equals_2_Hodge_Laplacian_square.py** - solves k=2 Hodge Laplacian on square, demonstrating some function spaces that work and some that don't.  Taken from "Finite Element Exterior Calculus: from Hodge Theory to Numerical Stability" (arXiv:0906.4325v3) by Arnold, Falk, Winther; S.2.3.1 p.14, where a lucid discussion can be found.  Note this is self-contained example with no attendant .msh file.
 
