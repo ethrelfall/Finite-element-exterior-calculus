@@ -41,7 +41,7 @@ Unless indicated in the descriptions below, the .msh file has the same filename 
 
 **unstable_1d_interval_Laplacian** - solves scalar Laplacian homogeneous Dirichlet source problem in 1D.  Stable if solution space for the derivative is linear but unstable if quadratic basis functions are used.  Is example in Fig.1.2 of "Finite Element Exterior Calculus: from Hodge Theory to Numerical Stability" (arXiv:0906.4325v3) by Arnold, Falk, Winther.  Uses interval mesh so no attendant .msh file.
 
-![unstable_1d_interval_Laplacian](png/unstable_1d_interval_Laplacian.png "Unstable output from solution using quadratic basis functions for gradients.")
+![unstable_1d_interval_Laplacian](png/unstable_1d_interval_Laplacian.png "Output (derivative of u) from solution using linear and quadratic basis functions for gradients, for 1D Laplacian problem.")
 
 
 The help of Colin Cotter, Patrick Farrell, and Lawrence Mitchell is acknowledged.  Any mistakes are due to the author (Ed Threlfall). 
