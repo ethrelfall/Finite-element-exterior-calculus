@@ -15,6 +15,8 @@ Unless indicated in the descriptions below, the .msh file has the same filename 
 
 **re-entrant_corner_primal.py** - problem as **re-entrant_corner.py** but attempted using primal formulation.  Converges to an incorrect answer due to the inability of the function space to represent the re-entrant corner singularity.
 
+![re_entrant_corner_primal](png/re-entrant_corner_primal.png "Re-entrant corner with primal formulation - solution incorrect and has no corner singularity.")
+
 **source_problem_on_annulus.py** - Laplacian problem with source on an annular domain.  The numerical challenge is to avoid pollution of the output by the 1-cohomology of the vector Laplacian on the domain (represented by the usual (-y/r^2, -x/r^2) vortex solution).  Includes analytic solution to the problem for comparison with output.
 
 ![source_problem_on_annulus_analytic](png/source_problem_on_annulus_analytic.png "Analytic solution to source problem on annulus.")
@@ -36,5 +38,10 @@ Unless indicated in the descriptions below, the .msh file has the same filename 
 
 ![k_equals_2_Hodge_Laplacian_square_success](png/k_equals_2_Hodge_Laplacian_square_success.png "Success case of k=2 Hodge Laplacian problem on square.")
 ![k_equals_2_Hodge_Laplacian_square_fail](png/k_equals_2_Hodge_Laplacian_square_fail.png "Failure case of k=2 Hodge Laplacian problem on square.")
+
+**unstable_1d_interval_Laplacian"" - solves scalar Laplacian homogeneous Dirichlet source problem in 1D.  Stable if solution space for the derivative is linear but unstable if quadratic basis functions are used.  Is example in Fig.1.2 of "Finite Element Exterior Calculus: from Hodge Theory to Numerical Stability" (arXiv:0906.4325v3) by Arnold, Falk, Winther.  Uses interval mesh so no attendant .msh file.
+
+![unstable_1d_interval_Laplacian](png/unstable_1d_interval_Laplacian.png "Unstable output from solution using quadratic basis functions for gradients.")
+
 
 The help of Colin Cotter, Patrick Farrell, and Lawrence Mitchell is acknowledged.  Any mistakes are due to the author (Ed Threlfall). 
