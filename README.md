@@ -13,7 +13,7 @@ Unless indicated in the descriptions below, the .msh file has the same filename 
 
 ![re_entrant_corner](png/arnold51_CG_ord2.png "Re-entrant corner with CG order 2 vector elements for gradient, showing spurious oscillation; remedy is to switch to e.g. Raviart-Thomas edge elements.")
 
-**re-entrant_corner.py** - problem as **re-entrant_corner.py** but attempted using primal formulation.  Converges to an incorrect answer due to the inability of the function space to represent the re-entrant corner singularity.
+**re-entrant_corner_primal.py** - problem as **re-entrant_corner.py** but attempted using primal formulation.  Converges to an incorrect answer due to the inability of the function space to represent the re-entrant corner singularity.
 
 **source_problem_on_annulus.py** - Laplacian problem with source on an annular domain.  The numerical challenge is to avoid pollution of the output by the 1-cohomology of the vector Laplacian on the domain (represented by the usual (-y/r^2, -x/r^2) vortex solution).  Includes analytic solution to the problem for comparison with output.
 
