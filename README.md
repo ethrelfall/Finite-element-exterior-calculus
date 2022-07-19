@@ -13,7 +13,7 @@ Unless indicated in the descriptions below, the .msh file has the same filename 
 
 ![re_entrant_corner](png/arnold51_CG_ord2.png "Re-entrant corner with CG order 2 vector elements for gradient, showing spurious oscillation; remedy is to switch to e.g. Raviart-Thomas edge elements.")
 
-**re-entrant_corner_primal.py** - problem as **re-entrant_corner.py** but attempted using primal formulation.  Converges to an incorrect answer due to the inability of the function space to represent the re-entrant corner singularity.
+**re-entrant_corner_primal.py** - problem as **re-entrant_corner.py** but attempted using primal formulation.  Converges to an incorrect answer due to the inability of the function space to represent the re-entrant corner singularity.  Provides thus motivation for using mixed formulation.
 
 ![re_entrant_corner_primal](png/re-entrant_corner_primal.png "Re-entrant corner with primal formulation - solution incorrect and has no corner singularity.")
 
