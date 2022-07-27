@@ -2,7 +2,7 @@ from firedrake import *
 
 # solves k=2 (i.e. 2-form) Hodge Laplace problem on unit square
 # this corresponds to \nabla^2 u = f with homogeneous Dirichlet BCs
-# note that here sigma is a 1-form and u is a "scalar" (i.e. single-cpt, actually 2-form in 2D),
+# note that here sigma is a 1-form (basically equiv to - grad(u)) and u is a "scalar" (i.e. single-cpt, actually 2-form in 2D),
 # i.e. opposite way round to k=1 Hodge Laplacian examples
 
 # this is based on "Finite Element Exterior Calculus: from Hodge Theory to Numerical Stability"
