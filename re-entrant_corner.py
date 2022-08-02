@@ -38,3 +38,8 @@ solve(a == L, g)
 u, sigma = g.split()
 File("re-entrant_corner_u.pvd").write(u)
 #File("re-entrant_corner_FEEC_sigma.pvd").write(sigma)  # if sigma desired as output
+
+# plot rhs from evaluation of Laplacian of the solution
+r = Function(SV)
+r.interpolate(grad(div(u))-curl(curl(u)))
+File("re-entrant_corner_rhs.pvd").write(r)
