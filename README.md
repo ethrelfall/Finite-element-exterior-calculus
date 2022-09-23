@@ -27,6 +27,8 @@ Unless indicated in the descriptions below, the .msh file has the same filename 
 
 **eigenvalue_problem_square_vortex.py** - eigenvalue problem, similar to eigenvalue_problem_single_vortex.py but on a square domain with a non-centred square hole.  Has re-entrant corner singularities (r^{-1/3}) and also non-trivial cohomology.  Amplitude plot shows corner singularities; streamline plot shows ... streamlines.
 
+**eigenvalue_problem_square_vortex_primal.py" - as **eigenvalue_problem_square_vortex.py** but using primal formulation.  Fails to find the harmonic mode, instead finding a spurious non-zero eigenvalue lowest-eigenvalue solution.
+
 **square_vortex_cohomology_alternate.py** - solves problem of finding zero-eigenvalue mode of square + square hole as in eigenvalue_problem_square_vortex.py but using an alternate method (no FEEC needed, just conventional FEM).  Treats problem as deformation of a circular vortex by a gradient.
 
 **double_vortex_cohomology_alternate.py** - solves problem of finding zero-eigenvalue modes of square + 2 circular holes as in eigenvalue_problem_double_vortex.py (uses same .msh file as that example) but using an alternate method (no FEEC needed, just conventional FEM).  Treats problem as deformation of analytic double vortex solutions by gradients.
